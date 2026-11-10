@@ -1,0 +1,399 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "555819e4-5669-4822-9f08-b211265528e4")
+	(paper "A3")
+	(title_block
+		(title "XR Haptic Glove - Wrist Board")
+		(date "2026-11-10")
+		(rev "0.3")
+		(company "XR Haptic Glove")
+		(comment 1 "MCU -> control signals -> Power / Haptics / Actuators")
+		(comment 2 "Board v2: 66 x 46 mm, 4-layer, XT30 battery input")
+		(comment 3 "Schematic v3: drawn wires, power flows left -> right")
+	)
+	(lib_symbols)
+	(text "Battery (XT30) -> BQ24075 power path -> 5 V boost (servos, TEC) / 3.3 V LDO (MCU, haptics)"
+		(exclude_from_sim no)
+		(at 50.8 142.24 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "d4ba1d5c-1df0-4753-b762-a2372be5afd8")
+	)
+	(text "Power rails V3V3 / V5 / VBAT / VSYS / GND are global power symbols shared by both sheets."
+		(exclude_from_sim no)
+		(at 50.8 147.32 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "f27a053c-d636-4766-ad2a-ea66684995f9")
+	)
+	(wire
+		(pts
+			(xy 106.68 81.28) (xy 190.5 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4b650ccc-610b-426f-9a73-f5b85489c849")
+	)
+	(wire
+		(pts
+			(xy 106.68 76.2) (xy 190.5 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4bfb7417-fda1-4953-9c80-785cd11106c4")
+	)
+	(wire
+		(pts
+			(xy 106.68 71.12) (xy 190.5 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "63b2fe97-b6a6-4b6d-8a55-b2cbda91c22e")
+	)
+	(wire
+		(pts
+			(xy 106.68 106.68) (xy 190.5 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "89ede8ed-598e-4aea-b604-19584c3a4846")
+	)
+	(wire
+		(pts
+			(xy 106.68 86.36) (xy 190.5 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a2b526e-d66f-4f0b-b5d7-ad682531f317")
+	)
+	(wire
+		(pts
+			(xy 106.68 96.52) (xy 190.5 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9d48f4ae-56fb-4068-a5b5-50fb609b6fab")
+	)
+	(wire
+		(pts
+			(xy 106.68 101.6) (xy 190.5 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b45b0657-9162-47b6-8333-92f6109cde28")
+	)
+	(wire
+		(pts
+			(xy 106.68 111.76) (xy 190.5 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c1ab5f58-0ce6-47a1-84b8-36f5d66ca47f")
+	)
+	(wire
+		(pts
+			(xy 106.68 91.44) (xy 190.5 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cdcacaf3-5f85-4bbb-8462-2bb64b194ef5")
+	)
+	(sheet
+		(at 50.8 63.5)
+		(size 55.88 55.88)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "a1000001-0000-4000-8000-000000000001")
+		(property "Sheetname" "MCU"
+			(at 50.8 62.7884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "sheets/01_mcu.kicad_sch"
+			(at 50.8 119.9646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "SERVO_SIG1" output
+			(at 106.68 71.12 0)
+			(uuid "9864b2e4-6c5e-455b-b2ca-16978ca64ac2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SERVO_SIG2" output
+			(at 106.68 76.2 0)
+			(uuid "a4f7b224-fb6a-421d-8e34-c14bf1c47eb7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SERVO_SIG3" output
+			(at 106.68 81.28 0)
+			(uuid "5163c23b-eb1e-4fe5-b786-1774aec950aa")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SERVO_SIG4" output
+			(at 106.68 86.36 0)
+			(uuid "6db14757-af02-4896-84f4-8f4c8b1350a4")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SERVO_SIG5" output
+			(at 106.68 91.44 0)
+			(uuid "519b245a-9bf8-4ec2-a624-9df2c84a1b20")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "TEC_IN1" output
+			(at 106.68 96.52 0)
+			(uuid "9028c65a-3cb1-40e8-abc5-dc6bb0688e21")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "TEC_IN2" output
+			(at 106.68 101.6 0)
+			(uuid "f8525b46-e129-4961-9796-51e45fb09ab6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "I2C_SDA" bidirectional
+			(at 106.68 106.68 0)
+			(uuid "0b4a871e-e23a-4dda-80c8-7002ccc47d5e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "I2C_SCL" bidirectional
+			(at 106.68 111.76 0)
+			(uuid "f57758d0-579e-4ce8-8823-a2a5854c8521")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "xr-glove"
+				(path "/555819e4-5669-4822-9f08-b211265528e4"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 190.5 63.5)
+		(size 88.9 55.88)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "a1000001-0000-4000-8000-000000000002")
+		(property "Sheetname" "Power_Haptics_Actuators"
+			(at 190.5 62.7884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "sheets/02_power_haptics.kicad_sch"
+			(at 190.5 119.9646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "SERVO_SIG1" input
+			(at 190.5 71.12 180)
+			(uuid "9662b335-23ed-4973-84a5-5b4524319a7c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SERVO_SIG2" input
+			(at 190.5 76.2 180)
+			(uuid "c10fdc30-1a03-49b3-ac86-c5aebb40cba9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SERVO_SIG3" input
+			(at 190.5 81.28 180)
+			(uuid "cb69d42b-99d7-4378-81e7-4b7f6c0b4c92")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SERVO_SIG4" input
+			(at 190.5 86.36 180)
+			(uuid "fba139c7-2658-4f3b-a783-3d03fb10a5e8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SERVO_SIG5" input
+			(at 190.5 91.44 180)
+			(uuid "6ea3896a-b3bb-4ae0-87a9-8c5b2080ffab")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "TEC_IN1" input
+			(at 190.5 96.52 180)
+			(uuid "62bfce39-1cb4-49f7-b9f3-1c428b8a033c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "TEC_IN2" input
+			(at 190.5 101.6 180)
+			(uuid "2ae633fa-0118-407f-96ed-e5bbb4869367")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "I2C_SDA" bidirectional
+			(at 190.5 106.68 180)
+			(uuid "09784ada-52e9-4de8-8412-2b22bb081a73")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "I2C_SCL" bidirectional
+			(at 190.5 111.76 180)
+			(uuid "bd5243b4-01de-40bc-b865-ff1d60c894a0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "xr-glove"
+				(path "/555819e4-5669-4822-9f08-b211265528e4"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
